@@ -1,4 +1,4 @@
 Simple Banking Actions Panel
 
 
-![WEEK2_HOMEWORK](https://raw.githubusercontent.com/melihcengelli/Simple-Banking-Actions-Panel/main/melihcengelli.png)
+![MELIHCENGELLI](https://raw.githubusercontent.com/melihcengelli/Simple-Banking-Actions-Panel/main/melihcengelli.png?token=GHSAT0AAAAAABRIHPXMVQN5ISISALCJK6JGYQQIEXQ)
