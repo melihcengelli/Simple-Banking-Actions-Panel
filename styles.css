@@ -1,0 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#container {
+    position: fixed;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-image:url(img/bg.jpg);
+	background-size: cover;
+	align-items: center;
+	
+
+}
+#content {
+	width: 75%;
+	height: 75%;
+	float: left;
+
+}
+
+#content2 {
+	width: 75%;
+	height: 75%;
+	float: left;
+	float: left;
+}
+
+@font-face {
+    font-family: “Montserrat”;
+    src: url(‘fonts/Montserrat-Regular.ttf’) format(“truetype”);
+}
+
+#topside, #topside2 {
+	position: relative;
+	width: 100%;
+	height: 25%;
+	margin-bottom: 10px;
+	font-family: "Montserrat";
+
+}
+#bottomside, #bottomside2 {
+	position: relative;
+	width: 100%;
+	height: 75%;
+	font-family: "Montserrat";
+	
+
+}
+#bottomside::-webkit-scrollbar {
+	visibility: hidden;
+}
+#add {
+	position: relative;
+	width: 30%;
+	height: 100%;
+	background-image:url(img/bg2.png);
+	float: left;
+	border-radius: 25px;
+	border: 2px solid orange;
+	overflow: hidden;
+	margin-right: 10px;
+	margin-left: 10%;
+
+	
+}
+#urun{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background-image:url(img/bg2.png);
+	float: left;
+	border-radius: 25px;
+	border: 2px solid orange;
+	overflow: hidden;
+	margin-right: 10px;
+	margin-left: 10%;
+}
+#sepet{
+	position: relative;
+	width: 30%;
+	height: 100%;
+	float: left;
+	background-image:url(img/bg2.png);
+	border-radius: 25px;
+	border: 2px solid orange;
+	overflow: hidden;
+}
+#transfer {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-image:url(img/bg2.png);
+	border-radius: 25px;
+	border: 2px solid orange;
+	overflow: hidden;
+
+}
+#leftadd, #lefturun{
+	position: relative;
+	width: 60%;
+	height: 100%;
+	float: left;
+
+}
+#rightadd, #righturun{
+	position: relative;
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+#nameuser, #nameuser2, #productdet{
+	position: relative;
+	width: 100%;
+	height: 50%;
+}
+#balance, #balance2, #productadd {
+	position: relative;
+	width: 100%;
+	height: 50%;
+}
+#addbutton {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#sender {
+	position: relative;
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+#sepettekilertop {
+	height: 93%;
+	width: 100%;
+	overflow: scroll;
+}
+#sepettekilertop::-webkit-scrollbar {
+	display: none;
+	visibility: hidden;
+}
+#sepettekilerbottom {
+	height: 7%;
+}
+
+
+#receiver {
+	position: relative;
+	width: 25%;
+	height: 100%;
+	float: left;
+
+}
+#addbuttonproduct {
+	width: 100%;
+}
+#ustsepet, #altsepet {
+	width: 100%;
+	height: 50%;
+}
+
+#amount {
+	position: relative;
+	width: 25%;
+	height: 100%;
+	float: left;
+
+}
+#sendbutton {
+	position: relative;
+	width: 25%;
+	height: 100%;
+	float: left;
+
+}
+#users{
+	position: relative;
+	width: 30%;
+	height: 100%;
+	background-image:url(img/bg2.png);
+	float: left;
+	border-radius: 25px;
+	border: 2px solid orange;
+	overflow: hidden;
+	margin-right: 10px;
+	margin-left: 10%;
+}
+#urunler {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background-image:url(img/bg2.png);
+	float: left;
+	border-radius: 25px;
+	border: 2px solid orange;
+	overflow: hidden;
+	margin-right: 10px;
+	margin-left: 10%;
+}
+#sepettekiler {
+	position: relative;
+	width: 30%;
+	height: 100%;
+	background-image:url(img/bg2.png);
+	float: left;
+	border-radius: 25px;
+	border: 2px solid orange;
+	overflow:auto;
+}
+
+#history  {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background-image:url(img/bg2.png);
+	float: left;
+	border-radius: 25px;
+	border: 2px solid orange;
+	overflow:auto;
+}
+#history::-webkit-scrollbar {
+	visibility: hidden;
+}
+
+#addbutton1 {
+	width: 100%;
+	height: 40px;
+}
+#sendbutton1 {
+	width: 100%;
+	height: 40px;
+}
+#filterbutton {
+	width: 100%;
+	height: 40px;
+}
+
+li {
+	color: azure;
+	font-family: "Montserrat";
+	border-bottom: 1px solid grey;
+	margin-top: 7px;
+	
+}
+
+#userslist,#usershistory {
+	margin-top: 10px;
+}
+
+.cancel {
+	float: right;
+	margin-right: 10px;
+	height: 16px;
+	width: 16px;
+}
+.cancel:hover {
+	color: orange;
+	cursor: pointer;
+	transition: 500ms;
+}

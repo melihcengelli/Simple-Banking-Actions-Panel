@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Simple Banking Actions Panel</title>
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <div id="topside">
+                <div id="add">
+                    <div id="leftadd">
+                        <div id="nameuser">
+                            <span class="input-group-text" id="input1">User Name</span>
+                            <input id="inputusername" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div id="balance">
+                            <span class="input-group-text" id="input1">Balance</span>
+                            <input id="inputbalance" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+                    <div id="rightadd">
+                        <div id="addbutton">
+                            <span class="input-group-text" id="input1">User Add</span>
+
+                            <button id="addbutton1" type="button" class="btn btn-warning" onclick="add()">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="transfer">
+                    <div id="sender">
+                        <span class="input-group-text" id="input1">Sender</span>
+
+                        <select id="senderlist" class="form-select" aria-label="Default select example">
+                        </select>
+
+                        <select id="filterlist" class="form-select" aria-label="Default select example">
+                            <option value="All">All</option>
+                            <option value="Transfers">Transfers</option>
+                            <option value="Deleted Users">Deleted Users</option>
+                            <option value="Added Users">Added Users</option>
+                            <option value="Warnings">Warnings</option>
+                            <option value="Sold">Sold</option>
+
+                        </select>
+                    </div>
+                    <div id="receiver">
+                        <span class="input-group-text" id="input1">Receiver</span>
+
+                        <select id="receiverlist" class="form-select" aria-label="Default select example">
+                        </select>
+
+                        <button id="filterbutton" type="button" class="btn btn-warning" onclick="filterby()">Filter</button>
+
+                    </div>
+                    <div id="amount">
+                        <span class="input-group-text" id="input1">Amount</span>
+                        <input id="inputamount" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div id="sendbutton">
+                        <span class="input-group-text" id="input1">Send</span>
+
+                        <button id="sendbutton1" type="button" class="btn btn-warning" onclick="send()">Send</button>
+    
+                    </div>
+                </div>
+            </div>
+            <div id="bottomside">
+                <div id="users">
+                    <span class="input-group-text" id="input1">Users</span>
+                    <ul id="userslist">
+                    </ul>
+                </div>
+                <div id="history">
+                    <span class="input-group-text" id="input1">History</span>
+
+                    <ul id="usershistory">
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="content2">
+            <div id="topside2">
+                <div id="urun">
+                    <div id="lefturun">
+                        <div id="nameuser2">
+                            <span class="input-group-text" id="input1">Product Name</span>
+                            <input id="inputproduct" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div id="balance2">
+                            <span class="input-group-text" id="input1">Price</span>
+                            <input id="inputprice" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+                    <div id="righturun">
+                        <div id="productdet">
+                            <span class="input-group-text" id="input1">Amount of stock</span>
+                            <input id="stockamount" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div id="productadd">
+                            <span class="input-group-text" id="product">Add Product</span>
+
+                            <button id="addbuttonproduct" type="button" class="btn btn-warning" onclick="addProduct()">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="sepet">
+                    <div id="ustsepet">
+                        <span class="input-group-text" id="product">Cart Owner</span>
+
+                        <select id="sepetsahibi" class="form-select" aria-label="Default select example">
+                        </select>
+                    </div>
+                    <div id="altsepet">
+                        <span class="input-group-text" id="sellproduct">Sell Product</span>
+
+                        <button id="sellproductbutton" type="button" class="btn btn-warning" onclick="sell()" style="width: 100%;">Sell</button>
+                </div>
+                    
+                </div>
+            </div>
+            <div id="bottomside2">
+                <div id="urunler">
+                    <span class="input-group-text" id="urunlerspan">Products</span>
+                    <ul id="producthistory">
+
+                    </ul>
+                </div>
+                <div id="sepettekiler">
+                    <div id="sepettekilertop">
+                        <span class="input-group-text" id="sepettekilerspan">Cart</span>
+                        <ul id="carthistory">
+
+                        </ul>
+                    </div>
+                    <div id="sepettekilerbottom">
+                        <span class="input-group-text" id="cartamount" style="color: orange; background-color: black;">Total: 0₺</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
